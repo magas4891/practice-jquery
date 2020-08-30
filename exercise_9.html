@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <title>Create a div using jQuery with style tag.</title>
+</head>
+<body>
+<p>This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>
+<input type="button" value="Click to add new division" onclick="new_div()" />
+</body>
+<script>
+    function new_div() {
+        $(document).ready(function() {
+            let test = {
+                id: "div",
+                class: "divclass",
+                css: {
+                    "color": "Green"
+                }
+            };
+            let $div = $("<div>", test);
+            $div.html("New Division");
+            $("body").append($div);
+        });
+    }
+</script>
+</html>

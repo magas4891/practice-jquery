@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Make first word bold of all elements</title>
+</head>
+<body>
+<p>PHP Exercises</p>
+<p>Python Exercises</p>
+<p>JavaScript Exercises</p>
+<p>jQuery Exercises</p>
+</body>
+<script>
+    $('p').each(function(){
+        var pdata = $(this);
+        pdata.html( pdata.text().replace(/(^\w+)/, "<bold>$1</bold>") );
+    });
+</script>
+</html>

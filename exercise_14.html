@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>How to get the value of a textbox using jQuery</title>
+</head>
+<body>
+<input type="text" value="Input text here">
+</body>
+<script>
+    // $("input").after(`<p>inp_val</p>`);
+
+    $("input").bind("keyup", function() {
+        let inp_val = $("input").("value");
+        console.log(inp_val);
+    });
+</script>
+</html>

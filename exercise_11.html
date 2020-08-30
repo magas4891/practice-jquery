@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Add li in an existing ul.</title>
+</head>
+<body>
+<div id="header">
+    <ul>
+        <li><a href="https://www.w3resource.com/python/python-tutorial.php">Python</a></li>
+        <li><a href="https://www.w3resource.com/php/php-home.php">PHP</a></li>
+    </ul>
+</div>
+<input type="button" value="Click to add new li element" onclick="new_element()" />
+</body>
+<script>
+    function new_element() {
+        $('#header ul').append('<li><a href="https://www.w3resource.com/javascript/javascript.php">JavaScript</a></li>');
+    }
+</script>
+</html>

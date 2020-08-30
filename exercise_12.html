@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Remove all the options of a select box and then add one option and select it with jQuery</title>
+</head>
+<body>
+<select id='myColor'>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+</select>
+<input type="button" value="Click to Remove all Options" onclick="Remove_options()"/>
+</body>
+<script>
+    function Remove_options() {
+        $('#myColor').empty();
+        $('#myColor').append('<option selected="selected" value="White">White</option>');
+    }
+</script>
+</html>
